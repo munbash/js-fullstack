@@ -1,0 +1,103 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+input, label, button {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+button:hover {
+    background: #005fa3;
+    transform: scale(1.05);
+}
+#library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 20px;
+}
+.book {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s;
+}   
+.book:nth-child(2n) {
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+}
+.book:nth-child(3n) {
+    background: linear-gradient(135deg, #fddb92, #d1fdff);
+}
+.book-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+.book p {
+    margin: 6px 0;
+    color: #333;
+}
+.book button {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.3s;
+}
+.remove-btn {
+    background: #ff4d4d;
+}
+.toggle-btn {
+    background: #28a745;
+    margin-top: 5px;
+}
+.remove-btn {
+    background: #ff4d4d;
+}
+.toggle-btn {
+    background: #28a745;
+}
+.book button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
